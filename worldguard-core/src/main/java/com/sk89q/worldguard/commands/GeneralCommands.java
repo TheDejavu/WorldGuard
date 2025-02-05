@@ -228,7 +228,8 @@ public class GeneralCommands {
             sender.print("Compass repointed.");
         }
     }
-    
+
+    @SuppressWarnings("removal")
     @Command(aliases = {"stack", ";"}, usage = "", desc = "Stack items", max = 0)
     @CommandPermissions({"worldguard.stack"})
     public void stack(CommandContext args, Actor sender) throws CommandException {
